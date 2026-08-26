@@ -243,3 +243,101 @@ a.logo:hover{
 }
 
 /* -------------------------------------------------------------- */
+
+
+/* -----------------------------------------------------------------
+   2026 light refresh
+   Keeps the original visual identity, but makes the layout cleaner,
+   fixes the homepage portrait height, and behaves better on laptops.
+   ----------------------------------------------------------------- */
+
+body, html {
+  background-color: #e3e3e3;
+  color: #4a4a4a;
+}
+
+td {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+table#central {
+  width: min(760px, calc(100vw - 70px));
+}
+
+td.mainContent {
+  padding: 18px 18px 14px 0;
+}
+
+td.menu {
+  width: 130px;
+  padding-left: 8px;
+}
+
+a.logo {
+  font-size: 36px;
+  letter-spacing: -1px;
+}
+
+/* Homepage: photo and contact area are deliberately the same height. */
+tr.home-row {
+  height: 390px;
+}
+
+td.home-contact {
+  padding: 0 18px 0 0;
+}
+
+.contact-card {
+  height: 390px;
+  box-sizing: border-box;
+  padding: 18px 2px 12px 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-photo {
+  display: block;
+  width: 260px;
+  height: 390px;
+  object-fit: cover;
+  object-position: center top;
+  box-sizing: border-box;
+}
+
+/* Slightly calmer navigation. */
+#navlist li {
+  margin: 4px 0;
+}
+
+#navlist li a {
+  font-size: 12px;
+}
+
+/* Keep the old framed look but use less empty border on smaller screens. */
+table.holder {
+  border-width: 10px;
+}
+
+@media (max-width: 820px) {
+  table#central {
+    width: calc(100vw - 40px);
+  }
+
+  a.logo {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  /* The old table layout remains usable; content can scroll rather than
+     squeezing the publication/research lists into unreadable columns. */
+  table#central {
+    min-width: 620px;
+  }
+
+  table.holder {
+    border-width: 6px;
+  }
+}
