@@ -194,13 +194,10 @@ a.logo:hover{
   padding-left: 10px;
 }
 
-#navlist li a{
-  background: transparent url(../images/bullet_off.gif) left center no-repeat;
-  padding-left: 10px;
-  text-align: left;
-  font: normal 11px verdana, lucida, sans-serif;
-  text-decoration: none;
-  color: #888;
+#navlist1 li a {
+    font: inherit;
+    text-decoration: none;
+    color: #888888;
 }
 
 #navlist a:hover{
