@@ -224,7 +224,7 @@ a.logo:hover{
 #navlist1 li a{
   background: transparent url(../images/bullet_off.gif) left center no-repeat;
   text-align: left;
-  font: normal 11px verdana, lucida, sans-serif;
+  font: inherit;
   text-decoration: none;
   color: #888;
 }
